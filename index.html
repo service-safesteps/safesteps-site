@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============================================================
+     SEO + SOCIAL  (helps you show up when people Google the name)
+     Replace https://www.safesteps-edu.uk/ with your real URL once live.
+     ============================================================ -->
+<title>Safe Steps Health &amp; Safety | Nursery &amp; School Compliance, Lincolnshire</title>
+<meta name="description" content="Practical, fixed-price health &amp; safety and inspection-readiness support for nurseries and schools across Lincolnshire and the East Midlands. NEBOSH qualified, IOSH member." />
+<meta name="theme-color" content="#1B5E20" />
+<link rel="canonical" href="https://www.safesteps-edu.uk/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Safe Steps Health &amp; Safety, Nursery &amp; School Compliance" />
+<meta property="og:description" content="Fixed-price health &amp; safety and inspection-readiness support for nurseries and schools across Lincolnshire and the East Midlands." />
+<meta property="og:url" content="https://www.safesteps-edu.uk/" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Structured data: tells Google you are a real local business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Safe Steps Health & Safety",
+  "description": "Health & safety consultancy providing inspection-readiness, risk assessments, policies and compliance support for nurseries and schools across Lincolnshire and the East Midlands.",
+  "url": "https://www.safesteps-edu.uk/",
+  "email": "service@safesteps-edu.uk",
+  "areaServed": ["Lincolnshire", "East Midlands", "United Kingdom"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Lincolnshire",
+    "addressCountry": "GB"
+  },
+  "knowsAbout": ["Occupational health and safety", "EYFS compliance", "Risk assessment", "Inspection readiness"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --forest:#1B5E20;
+    --forest-700:#175019;
+    --forest-900:#0E3312;
+    --sage-50:#EEF3EC;
+    --sage-100:#DFEADD;
+
+    /* PAGE / PANEL BACKGROUNDS
+       Original warm "cream" scheme (kept here in case you want to revert):
+         --paper:#FAF8F2;
+         --paper-2:#F3EFE5;
+       Current scheme: clean, cool, lightly green-tinted neutral with white panels. */
+    --paper:#F2F5F2;
+    --paper-2:#FFFFFF;
+
+    --ink:#1C1E19;
+    --ink-2:#3A3E34;
+    --muted:#5C6154;
+    --line:rgba(28,30,25,.12);
+    --line-strong:rgba(28,30,25,.18);
+    --gold:#9C7B2E;
+    --shadow:0 1px 2px rgba(14,51,18,.04), 0 12px 28px -12px rgba(14,51,18,.18);
+    --shadow-sm:0 1px 2px rgba(14,51,18,.06), 0 6px 16px -10px rgba(14,51,18,.16);
+    --r:14px;
+    --maxw:1140px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"IBM Plex Sans",-apple-system,system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  }
+
+  h1,h2,h3,h4{font-family:"Spectral",Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--ink)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--forest);display:inline-flex;align-items:center;gap:.6em;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--forest);opacity:.6}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+    font-family:"IBM Plex Sans";font-weight:600;font-size:.97rem;
+    padding:.85em 1.5em;border-radius:999px;cursor:pointer;border:1px solid transparent;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--forest);color:#fff;box-shadow:var(--shadow-sm)}
+  .btn-primary:hover{background:var(--forest-900);transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+  .btn-ghost:hover{border-color:var(--forest);color:var(--forest);transform:translateY(-2px)}
+  .btn svg{width:17px;height:17px}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    /* original cream header tint: rgba(250,248,242,.82) */
+    background:rgba(242,245,242,.85);backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:.7rem}
+  .brand .mark{width:38px;height:38px;flex:none}
+  .brand .name{font-family:"Spectral";font-weight:600;font-size:1.34rem;letter-spacing:-.02em;color:var(--ink);line-height:1}
+  .brand .sub{display:block;font-family:"IBM Plex Sans";font-weight:600;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.28em}
+  .navlinks{display:flex;align-items:center;gap:2rem}
+  .navlinks a{font-size:.95rem;font-weight:500;color:var(--ink-2);transition:color .16s}
+  .navlinks a:hover{color:var(--forest)}
+  .nav-cta{display:flex;align-items:center;gap:1.4rem}
+  .nav-email{font-size:.92rem;font-weight:500;color:var(--muted)}
+  .nav-email:hover{color:var(--forest)}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:8px;color:var(--ink)}
+  .burger svg{width:26px;height:26px}
+
+  .hero{padding:44px 0 60px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,5vw,3.9rem);margin:.5em 0 .42em}
+  .hero h1 em{font-style:italic;color:var(--forest);font-weight:600}
+  .hero .lede{font-size:1.16rem;color:var(--ink-2);max-width:34em;margin-bottom:2rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+
+  .cred{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);
+    padding:30px 30px 26px;box-shadow:var(--shadow);position:relative;
+  }
+  .seal{display:flex;align-items:center;gap:.7rem;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .seal svg{width:40px;height:40px;flex:none}
+  .seal .t{font-family:"Spectral";font-weight:600;font-size:1.06rem;color:var(--ink);line-height:1.2}
+  .seal .t span{display:block;font-family:"IBM Plex Sans";font-weight:500;font-size:.78rem;color:var(--muted);letter-spacing:.02em;text-transform:none}
+  .cred ul{list-style:none;margin:14px 0 0}
+  .cred li{display:flex;gap:.7rem;align-items:flex-start;padding:9px 0;font-size:.97rem;color:var(--ink-2)}
+  .cred li svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--forest)}
+  .cred li b{color:var(--ink);font-weight:600}
+  .cred .foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+
+  .trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sage-50)}
+  .trustbar .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;padding:26px 0}
+  .stat{display:flex;flex-direction:column;align-items:center;text-align:center;flex:1;min-width:140px;padding:6px 10px}
+  .stat .n{font-family:"Spectral";font-weight:600;font-size:1.5rem;color:var(--forest);line-height:1}
+  .stat .l{font-size:.82rem;color:var(--muted);margin-top:.45em;letter-spacing:.01em}
+
+  section{scroll-margin-top:86px}
+  .block{padding:60px 0}
+  .head{max-width:42em;margin-bottom:48px}
+  .head h2{font-size:clamp(1.9rem,3.4vw,2.65rem);margin:.55em 0 .4em}
+  .head p{font-size:1.1rem;color:var(--ink-2)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;position:relative;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong)}
+  .card .ic{
+    width:48px;height:48px;border-radius:11px;background:var(--sage-50);
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--forest);
+    border:1px solid var(--line);
+  }
+  .card .ic svg{width:24px;height:24px}
+  .card h3{font-size:1.22rem;margin-bottom:.5em}
+  .card p{font-size:.97rem;color:var(--muted)}
+  .scope-note{
+    margin-top:30px;font-size:.92rem;color:var(--muted);background:var(--paper-2);
+    border:1px solid var(--line);border-radius:12px;padding:16px 20px;display:flex;gap:.7rem;align-items:flex-start;box-shadow:var(--shadow-sm);
+  }
+  .scope-note svg{width:19px;height:19px;flex:none;margin-top:2px;color:var(--forest)}
+
+  .why{background:var(--forest-900);color:#EAF1E8;position:relative;overflow:hidden}
+  .why::after{
+    content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.06),transparent 70%);
+  }
+  .why .eyebrow{color:#9DC9A0}
+  .why .eyebrow::before{background:#9DC9A0}
+  .why h2{color:#fff}
+  .why .head p{color:#C7D6C4}
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 56px}
+  .feat{display:flex;gap:1rem;padding:22px 0;border-top:1px solid rgba(255,255,255,.13)}
+  .feat .n{font-family:"Spectral";font-size:1.05rem;color:#9DC9A0;font-weight:600;flex:none;width:1.6em}
+  .feat h4{color:#fff;font-size:1.16rem;margin-bottom:.35em;font-family:"Spectral"}
+  .feat p{color:#BFD0BD;font-size:.97rem}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+  .about-photo{
+    aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;position:relative;
+    background:var(--sage-50);border:1px solid var(--line);box-shadow:var(--shadow-sm);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);text-align:center;
+  }
+  .about-photo svg{width:60px;height:60px;opacity:.45;margin-bottom:12px;color:var(--forest)}
+  .about-photo span{font-size:.85rem;max-width:14em;line-height:1.4}
+  .about p{font-size:1.06rem;color:var(--ink-2);margin-bottom:1.1em;max-width:38em}
+  .about p:last-child{margin-bottom:0}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .contact h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-bottom:.5em}
+  .contact p.lede{font-size:1.12rem;color:var(--ink-2);margin-bottom:1.8rem;max-width:30em}
+  .contact-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .ccard{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:var(--shadow-sm)}
+  .ccard .crow{display:flex;gap:1rem;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+  .ccard .crow:last-child{border-bottom:0;padding-bottom:0}
+  .ccard .crow:first-child{padding-top:0}
+  .ccard .ci{width:42px;height:42px;border-radius:10px;background:var(--sage-50);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--forest);flex:none}
+  .ccard .ci svg{width:20px;height:20px}
+  .ccard .ck{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:.2em}
+  .ccard .cv{font-size:1.05rem;font-weight:500;color:var(--ink)}
+  .ccard .cv:hover{color:var(--forest)}
+
+  footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0 30px}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;padding-bottom:34px;border-bottom:1px solid var(--line)}
+  .foot-brand{max-width:30em}
+  .foot-brand .name{font-family:"Spectral";font-weight:600;font-size:1.3rem}
+  .foot-brand p{color:var(--muted);font-size:.95rem;margin-top:.7em}
+  .foot-col h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink);margin-bottom:1em}
+  .foot-col a,.foot-col span{display:block;color:var(--muted);font-size:.94rem;margin-bottom:.6em}
+  .foot-col a:hover{color:var(--forest)}
+  .legal{padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;color:var(--muted)}
+
+  .reveal{opacity:0;transform:translateY(18px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.16s}.d3{animation-delay:.27s}.d4{animation-delay:.38s}
+
+  :focus-visible{outline:2.5px solid var(--forest);outline-offset:3px;border-radius:4px}
+
+  @media (max-width:920px){
+    .navlinks,.nav-email{display:none}
+    .burger{display:block}
+    .nav-cta .btn{display:none}
+    .hero-grid{grid-template-columns:1fr;gap:42px}
+    .cards{grid-template-columns:1fr 1fr}
+    .why-grid{grid-template-columns:1fr;gap:0}
+    .about-grid{grid-template-columns:1fr;gap:34px}
+    .about-photo{max-width:320px}
+    .contact-grid{grid-template-columns:1fr;gap:36px}
+    .navlinks.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;
+      background:var(--paper);border-bottom:1px solid var(--line);padding:18px 28px;gap:6px;box-shadow:var(--shadow)}
+    .navlinks.open a{padding:10px 0;font-size:1.05rem}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 20px}
+    .cards{grid-template-columns:1fr}
+    .hero{padding:32px 0 40px}
+    .block{padding:46px 0}
+    .stat{min-width:45%}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Safe Steps Health and Safety home">
+      <img class="mark" src="data:image/png;base64,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" alt="Safe Steps logo" />
+      <span class="name">Safe Steps<span class="sub">Health &amp; Safety</span></span>
+    </a>
+
+    <nav class="navlinks" id="menu">
+      <a href="#why">Why us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="nav-email" href="mailto:service@safesteps-edu.uk">service@safesteps-edu.uk</a>
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ========================= HERO ========================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow reveal d1">Health &amp; Safety Consultancy &middot; Lincolnshire</span>
+      <h1 class="reveal d2">Health &amp; safety that lets you run your setting <em>with confidence.</em></h1>
+      <p class="lede reveal d3">Practical, fixed-price support for nurseries and schools that keeps your setting safe and properly documented. Clear advice, fair prices and none of the usual jargon.</p>
+      <div class="hero-cta reveal d4">
+        <a class="btn btn-primary" href="#contact">
+          Request a free consultation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#services">See how we help</a>
+      </div>
+    </div>
+
+    <aside class="cred reveal d4" aria-label="Qualifications">
+      <div class="seal">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="18" r="13" fill="#EEF3EC" stroke="#1B5E20" stroke-width="1.5"/>
+          <path d="m14.5 18 3.8 3.8L26 14" stroke="#1B5E20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 28.5 11 38l9-4 9 4-2-9.5" stroke="#9C7B2E" stroke-width="1.6" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <div class="t">Qualified &amp; local<span>The people behind the service</span></div>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>NEBOSH qualified</b> in occupational health &amp; safety</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>IOSH member</b></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Over <b>7 years</b> in health &amp; safety</span></li>
+      </ul>
+      <div class="foot">Lincolnshire based, working with settings right across the East Midlands. References available on request.</div>
+    </aside>
+  </div>
+</section>
+
+<!-- ========================= TRUST BAR (value, not qualifications) ========================= -->
+<div class="trustbar">
+  <div class="wrap row">
+    <div class="stat"><div class="n">Local</div><div class="l">Lincolnshire based</div></div>
+    <div class="stat"><div class="n">Fixed</div><div class="l">Transparent pricing</div></div>
+    <div class="stat"><div class="n">Free</div><div class="l">First consultation</div></div>
+    <div class="stat"><div class="n">Clear</div><div class="l">Plain English, no jargon</div></div>
+    <div class="stat"><div class="n">Focused</div><div class="l">Nurseries &amp; schools</div></div>
+  </div>
+</div>
+
+<!-- ========================= WHY US ========================= -->
+<section id="why" class="block why">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">A different kind of safety partner</span>
+      <h2>Big-firm expertise, without the big firm.</h2>
+      <p>Health &amp; safety should not feel like a chore or a confusing bill. Here is what working with Safe Steps is actually like.</p>
+    </div>
+    <div class="why-grid">
+      <div class="feat"><div class="n">01</div><div><h4>You work directly with a qualified consultant</h4><p>No call centres, no junior staff and no account managers. Just one dedicated specialist who takes the time to learn how your setting works.</p></div></div>
+      <div class="feat"><div class="n">02</div><div><h4>Fixed, transparent pricing</h4><p>You will know the cost before we start. No hourly surprises, no padding, just clear value for a fair price.</p></div></div>
+      <div class="feat"><div class="n">03</div><div><h4>Plain English, never jargon</h4><p>Advice and documents your whole team can actually understand and use, not paperwork that ends up forgotten in a drawer.</p></div></div>
+      <div class="feat"><div class="n">04</div><div><h4>Local and genuinely responsive</h4><p>Based in Lincolnshire and working across the East Midlands, so we are close by and quick to reply when you need us.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SERVICES ========================= -->
+<section id="services" class="block">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">What we help with</span>
+      <h2>Everything your setting needs to stay safe and compliant.</h2>
+      <p>Health and safety support built around the realities of running a nursery or school. Practical guidance to help you stay safe, compliant, and confident.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Risk assessments</h3>
+        <p>Clear, site-specific risk assessments covering premises, activities, workstations and more, written in plain English.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z M14 2v6h6 M9 13h6 M9 17h6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Policies &amp; documentation</h3>
+        <p>Up-to-date health &amp; safety policies, procedures and records that meet your legal obligations and are ready the moment an inspector asks.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18 M7 14l3-3 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Compliance audits &amp; checks</h3>
+        <p>Regular reviews that keep you on top of changing rules, with short, jargon-free reports you can act on straight away.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Staff guidance &amp; support</h3>
+        <p>Straightforward advice and training for your team, so safety becomes part of everyday practice instead of a last-minute scramble.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Ongoing support</h3>
+        <p>Optional ongoing support, so you have a qualified specialist on hand whenever a question or a change comes up.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3 8-8M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Inspection-readiness reviews</h3>
+        <p>A walkthrough of your setting against current standards, with a clear, prioritised action list, so you know exactly what needs doing before an inspection.</p>
+      </div>
+    </div>
+
+    <!-- Honest scope note. Strengthens credibility. Edit or remove if it does not fit. -->
+    <div class="scope-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16v-4 M12 8h.01 M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>A few specialist jobs sit outside what we do, such as full fire risk assessments, asbestos surveys and legionella assessments. Where you need those, we are happy to point you towards the right people.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section id="contact" class="block">
+  <div class="wrap contact contact-grid">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let's make your setting safe and compliant.</h2>
+      <p class="lede">Book a free, no-obligation chat. Tell us a bit about your setting and we will explain how we can help and what it will cost.</p>
+      <div class="contact-cta">
+        <a class="btn btn-primary" href="mailto:service@safesteps-edu.uk?subject=Health%20%26%20safety%20enquiry">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z M4 6l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Email us
+        </a>
+        <a class="btn btn-ghost" href="tel:+447969290750">Call 07969 290 750</a>
+      </div>
+    </div>
+
+    <div class="ccard">
+      <div class="crow">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 4h16v16H4z M4 6l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="ck">Email</div><a class="cv" href="mailto:service@safesteps-edu.uk">service@safesteps-edu.uk</a></div>
+      </div>
+      <div class="crow">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="ck">Phone</div><a class="cv" href="tel:+447969290750">07969 290 750</a></div>
+      </div>
+      <div class="crow">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11Z M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="ck">Area primarily served</div><span class="cv">Lincolnshire &amp; the East Midlands</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">Safe Steps Health &amp; Safety</div>
+        <p>Practical, fixed-price health &amp; safety and inspection-readiness support for nurseries and schools across Lincolnshire and the East Midlands.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <a href="#services">Inspection-readiness</a>
+        <a href="#services">Risk assessments</a>
+        <a href="#services">Policies &amp; audits</a>
+        <a href="#services">Staff guidance</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <a href="mailto:service@safesteps-edu.uk">service@safesteps-edu.uk</a>
+        <a href="tel:+447969290750">07969 290 750</a>
+        <span>Lincolnshire</span>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; <span id="yr">2026</span> Safe Steps Health &amp; Safety. All rights reserved.</span>
+      <!-- If you trade as a Ltd company, add your company name and number here.
+           If you are a sole trader using a business name, UK rules expect a
+           contact address on your site, so add it here. -->
+      <span>[Trading / registration details]</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+</script>
+</body>
+</html>
